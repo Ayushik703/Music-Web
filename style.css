@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Varela Round', sans-serif; */
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(bg.jpg);
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    /* width: 80%; */
+    margin: 12px 0;
+    border-radius: 35px;
+    padding: 0 40px;
+}
+
+.songItem img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.timestamp {
+    padding: 0 8px;
+    font-size: 18px;
+}
+
+.songlistplay i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bottom {
+    bottom: 0;
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 14px;
+    color: white;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    color: white;
+    width: 100%;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: 0.4s ease-in;
+    padding-right: 10px;
+    width: 70px;
+}
